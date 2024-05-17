@@ -36,6 +36,7 @@ function App() {
               </li>
             ))}
           </ul>
+          {user?.userId && <span>Hello {user.username}</span>}
           <button onClick={signOut}>Sign out</button>
           <div>
             🥳 App successfully hosted. Try creating a new todo.
